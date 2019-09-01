@@ -1,0 +1,16 @@
+¿Son válidas las siguientes expresiones?
+
+matrix[0][0]=*(*matrix))
+	SÍ ES VÁLIDA
+
+matrix[i][j]= *((*(matrix)) + (i * COLS + j))
+	SÍ ES VÁLIDA
+
+matrix[i][j]= *(*(matrix + i) + j)
+	SÍ ES VÁLIDA
+
+matrix[i][j]= *(matrix[i] + j)
+	NO ES VÁLIDO
+
+matrix[i][j]=  (*(matrix + i))[j]
+	SÍ ES VÁLIDA
