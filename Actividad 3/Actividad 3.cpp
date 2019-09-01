@@ -46,6 +46,3 @@ cout << "Direccion de matriz [9][19]: " << matriz[9][19] << endl;
 
 return 0;
 }
-
-//SEGUNDA PARTE DE ACTIVIDAD
-
