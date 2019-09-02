@@ -17,8 +17,4 @@ int main()
 	cout << "Valor del triple: " << triple << endl;
 	cout << "Direccion &triple: " << &triple << endl;
 		return 0;							
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3283f0e5550efd14296ec0c176453f70f6dcb1d9
