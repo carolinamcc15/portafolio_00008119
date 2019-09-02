@@ -16,5 +16,5 @@ int main()
 	cout << "Direccion &doble: " << &doble <<endl;
 	cout << "Valor del triple: " << triple << endl;
 	cout << "Direccion &triple: " << &triple << endl;
-		return 0;		ss					
+		return 0;							
 }
