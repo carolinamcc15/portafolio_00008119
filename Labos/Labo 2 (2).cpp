@@ -3,38 +3,39 @@
 
 using namespace std;
 
-    float r1=0;
-
-float valorr(float n, float b){
-
-    r1=((n/b)+b)/2;
-
-if((abs(r1-b))<0.0001){
+//FUNCION
+float r=0;
+float raiz(float num, float b){
+    r=((num/b)+b)/2;
+if((abs(r-b))<0.0001){
     return b;
 }
-else if(r1<0.0001){
-    return r1;
+else if(r<0.0001){
+    return r;
 }
 else{
-    return valorr(n,r1);
+    return raiz(num,r);
 }
 }
 
 int main(){
 
 float numero=0;
-float valor=0;
+float otro=0;
 
-cout << "Digite un entero para sacarle raiz: ";
+cout << "Digite un numero positivo para sacarle raiz: ";
 cin >> numero;
 
-cout << "Digite un numero mayor: ";
-cin >> valor;
-cout << "\nLa raiz cuadrada aproximada de " << numero << " es: "<<endl;
+cout << "Digite otro numero: ";
+cin >> otro;
 
-valorr(numero, valor);
-
-cout << valorr(numero, valor) << endl;
+if(numero>=0&&otro>=0){
+cout << "\nLa raiz cuadrada aproximada de " << numero << " es: ";
+cout << raiz(numero, otro) << endl;
+}
+else{
+    cout << "\nHa ingresado un numero negativo (no valido)" << endl;
+}
 
 return 0;
 }
