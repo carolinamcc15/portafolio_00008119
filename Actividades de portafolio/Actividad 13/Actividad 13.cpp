@@ -1,5 +1,5 @@
-//Carolina Maria Carranza Carballo
-//Caroline Michelle Sierra Linares
+// Carolina Maria Carranza Carballo
+// Caroline Michelle Sierra Linares
 
 #include <iostream>
 #include <string>
