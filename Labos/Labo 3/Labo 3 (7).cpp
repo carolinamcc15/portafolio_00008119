@@ -35,7 +35,7 @@ void mostrar(nodo *puntero){
     }
 }
 
-void eliminar(int num){
+void eliminar(nodo *puntero, int num){
     nodo *p = puntero, *q = NULL;
     while(p!= NULL&&(p->numero)!= num){
         q = p;
@@ -50,7 +50,7 @@ void eliminar(int num){
     else
         q->sig = p->sig;
     delete(p);
-    eliminar(num);
+    eliminar(puntero->sig, num);
 }
 
 int main() {
@@ -75,7 +75,7 @@ int main() {
                 cout << "\n" << endl;
                 cout<<"Numero a eliminar: ";
                 cin>>numero;
-                eliminar(numero);
+                eliminar(puntero, numero);
                 break;
             case 4:
                 break;
