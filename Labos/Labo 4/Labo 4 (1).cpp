@@ -28,12 +28,19 @@ void impares(int arreglo[], int tamano){
 	}
 }
 
-
-void invertir(int arreglo[], int tamano){
-	for (int i=(tamano)-1; i>=0; i--) {
-		cout << arreglo[i] << " " << endl;
-	}
-}
+//FUNCION RECURSIVA
+void invertir(int *arreglo, int tamano){
+    int ntamano=0;
+    ntamano=tamano-1;
+    if(ntamano==0){
+        cout << *(arreglo) << endl;
+    }
+    else{
+    int *puntero=arreglo+ntamano;
+    cout << *(arreglo+ntamano) << endl;
+    invertir(arreglo, ntamano);
+    }
+    }
 
 int main()
 {
@@ -55,7 +62,7 @@ int main()
 	bool continuar = true;
 
 	do {
-		cout << "\nMenu: \n\t1. Mostrar todos los numeros \n\t2. Mostrar numeros pares\n\t3. Mostrar numeros impares \n\t4. Mostrar en sentido inverso  \n\tOpcion elegida: ";
+		cout << "\nMenu: \n\t1. Mostrar todos los numeros \n\t2. Mostrar numeros pares\n\t3. Mostrar numeros impares \n\t4. Mostrar en sentido inverso  \n\t5. Salir \n\tOpcion elegida: ";
 		cin >> opcion;
 
 		switch (opcion) {
@@ -71,8 +78,10 @@ int main()
 			case 4: cout << "\nSentido inverso" << endl;
 				invertir(arreglo, numelementos);
 				break;
-			default: cout << "\nIngrese una opcion valida" << endl;
-				break;
+            case 5: continuar = false;
+                break;
+            default: cout << "\nIngrese una opcion valida" << endl;
+                break;
 		}
 
 	} while (continuar);
