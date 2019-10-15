@@ -1,5 +1,5 @@
-//Carolina Carranza
-//Caroline Sierra
+//Carolina María Carranza
+//Caroline Michelle Sierra
 
 #include <iostream>
 #include <cstdlib>
