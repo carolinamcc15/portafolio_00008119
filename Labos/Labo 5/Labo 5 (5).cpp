@@ -1,3 +1,6 @@
+//Carolina Maria Carranza Carballo
+//Caroline Michelle Sierra Linares
+
 #include <iostream>
 using namespace std;
 
